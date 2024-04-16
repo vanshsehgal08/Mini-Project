@@ -5,19 +5,25 @@
   --color-primary-opacity: #145229;
   --color-light: #ffffffdd;
   --color-dim-light: #f3f3f3;
-  --gradient-primary: linear-gradient(to top left, #2a8348, rgb(17, 87, 17));
+  /* --gradient-primary: linear-gradient(to top left, #2a8348, rgb(17, 87, 17)); */
   scroll-behavior: smooth;
 }
 
-/* //////////////////////////////////////////////////////////////
-//////////////    GENERAL ELEMENTS STYLING ////////////////////////
-////////////////////////////////////////////////////////////// */
 
 * {
   box-sizing: border-box;
   margin: 0;
   /* outline: 1px solid red; */
 }
+
+body{
+  /* background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%); */
+  background: url(assets/bg1.jpg) center center cover no-repeat fixed;
+}
+
+
+
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -159,6 +165,92 @@ header {
 }
 
 /* //////////////////////////////
+/////// SECTION HOME /////
+///////////////////////////////// */
+
+/* Define the keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Apply the animation to .home_txt */
+
+.home_page {
+  position: relative; /* Ensure relative positioning for absolute positioning inside */
+}
+
+.home_img {
+  position: relative; /* Relative positioning for absolutely positioned elements */
+  width: 100%;
+}
+
+.additional_img {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 40%; /* Adjust the width of the additional image as needed */
+  height: 70%; /* Maintain aspect ratio */
+}
+
+.home_txt {
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  color: #fff; /* Change text color to white */
+  animation: fadeIn 1.5s ease forwards; /* Apply fade-in animation */
+}
+
+.home_txt p {
+  font-weight: 600;
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.home_txt h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: 3px;
+  color: black; /* Change heading color to white */
+}
+
+.home_txt .home_label p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.home_txt a {
+  text-decoration: none;
+  color: black; /* Change link color to white */
+}
+
+.home_txt button {
+  background-color: var(--black);
+  color: black; /* Change button text color to white */
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.home_txt .bx-right-arrow-alt {
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.home_txt .home_social_icons a {
+  color: #fff; /* Change social icon color to white */
+}
+
+
+/* //////////////////////////////
 /////// LANDING PAGE STYLING /////
 ///////////////////////////////// */
 
@@ -172,7 +264,8 @@ main {
   margin: 1rem auto;
   width: 65%;
   padding: 2rem;
-  background-color: var(--color-light);
+  /* background-color: var(--color-light); */
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
   border-radius: 2px;
 }
 .about-us-title {
@@ -191,9 +284,11 @@ main {
   display: block;
   margin: 3rem auto;
 }
+
 /* TESTIMONIAL */
 .testimonials {
   background: var(--gradient-primary);
+  /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
   padding: 4rem 0;
   position: relative;
   min-height: 18rem;
@@ -324,6 +419,7 @@ main {
 ///////////////////////////////// */
 .login-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
   border-radius: 10px;
   width: 90%;
   max-width: 570px;
@@ -617,7 +713,7 @@ main {
 ///////////////////////////////// */
 
 footer {
-  background-color: #28b457;
+  background-color: #26ab52;
   color: var(--color-light);
   display: flex;
   width: 100%;
@@ -641,6 +737,32 @@ footer {
   min-height: 100%;
   margin-left: 1rem;
 }
+
+.social-link:hover{
+  color: black;
+}
+
+.van{
+  display: grid;
+}
+
+.data{
+  display: none;
+}
+g-signin2{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  margin-top: -50px;
+  margin-left: -50px;
+  
+  
+}
+.cent{
+  align-content: center;
+}
+
+
 
 /* ADDRESS */
 .address-container {
@@ -684,6 +806,7 @@ footer {
   }
   .nav-links-container {
     display: block;
+    
   }
   .nav-links-container .btn {
     margin: 5px;
@@ -694,6 +817,7 @@ footer {
   }
   header.landing-page {
     height: 50px;
+    /* background-color: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%); */
   }
   header.landing-page a:not(:first-child) {
     display: none;
@@ -732,6 +856,37 @@ footer {
   .home-section-middle {
     flex-basis: 60%;
   }
+
+  .home-btn1 a:hover{
+    color: white;
+  }
+  
+}
+
+.chat-head{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.patient-data{
+
+  text-align: center;
+  
+}
+
+.patient-data img{
+  width: 5rem;
+  margin-top: 2rem;
+}
+
+.patient-data button{
+  width: 14rem;
+  margin-bottom: 2rem;
+  font-weight: 1500;
+}
+
+.patient-data button a:hover{
+  color: #000;
 }
 
 @media only screen and (max-width: 550px) {
@@ -745,3 +900,5 @@ footer {
     flex-basis: 90%;
   }
 }
+
+

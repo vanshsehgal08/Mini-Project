@@ -23,7 +23,7 @@ const itemsSchema = {
   text: String,
 };
 
-const Item = mongoose.model("blog", itemsSchema);
+const Item = mongoose.model("blogs", itemsSchema);
 
 app.post("/add", async (req, res) => {
   const newItem = new Item({
@@ -61,7 +61,7 @@ app.get("/newItem/:newItemId", async (req, res) => {
   });
 });
 
-app.listen(3002, () => {
+app.listen(3000, () => {
   console.log("Server started on port 3002");
 });
 

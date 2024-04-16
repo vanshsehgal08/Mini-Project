@@ -195,7 +195,7 @@ header {
   right: 0;
   transform: translateY(-50%);
   width: 40%; /* Adjust the width of the additional image as needed */
-  height: 98%; /* Maintain aspect ratio */
+  height: 70%; /* Maintain aspect ratio */
 }
 
 .home_txt {
@@ -900,4 +900,5 @@ g-signin2{
     flex-basis: 90%;
   }
 }
+
 
