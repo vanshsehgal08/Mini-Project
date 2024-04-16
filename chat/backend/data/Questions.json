@@ -1,0 +1,112 @@
+{
+    "data": [
+      {
+        "question": "did someone ever asked an innocuous questions about you and your life,after that they might have used those information against you",
+        "options": [
+          "someone close to me did this",
+          "I don't remember",
+          "Some stranger did this once"
+        ],
+        "points": "16",
+        "tag": "emotional abuse"
+      },
+      {
+        "question": "do your lover or close one often exaggerate situation or minimize there role in a conflict to gain your sympathy",
+        "options": [
+          "yes often",
+          "sometimes",
+          "never"
+        ],
+        "points": "30",
+        "tag": "emotional abuse"
+      },
+      {
+        "question": "is your intelligence often questioned",
+        "options": [
+          "someone close to me did this",
+          "I don't remember",
+          "Some stranger did this once"
+        ],
+        "points": "40",
+        "tag": "emotional abuse"
+      },
+      {
+        "question": "do you think people gossip behind your back",
+        "options": [
+          "yes",
+          "nope"
+        ],
+        "points": "30",
+        "tag": "emotional abuse"
+      },
+      {
+        "question": "do you try to keep your public image near perfect",
+        "options": [
+          "always",
+          "when ever I am with my colleagues",
+          "In formal settings yes!"
+        ],
+        "points": "40",
+        "tag": "depression"
+      },
+      {
+        "question": "Do you ever feel like I am fine . I don't have it as bad as others",
+        "options": [
+          "often",
+          "sometimes"
+        ],
+        "points": "30",
+        "tag": "depression"
+      },
+      {
+        "question": "do you run from negative feelings",
+        "options": [
+          "often",
+          "sometimes",
+          "I face them head on"
+        ],
+        "points": "60",
+        "tag": "depression"
+      },
+      {
+        "question": "Have you been feeling sad or down most of the time for the past two weeks or longer?",
+        "options": [
+          "yes",
+          "since last week",
+          "no"
+        ],
+        "points": "50",
+        "tag": "depression"
+      },
+      {
+        "question": "Do you ever have thoughts of hurting yourself or ending your life?",
+        "options": [
+          "often",
+          "sometimes",
+          "never"
+        ],
+        "points": "80",
+        "tag": "depression"
+      },
+      {
+        "question": "Do you sometimes feel detached from reality or experience unusual perceptions?",
+        "options": [
+          "often",
+          "sometimes",
+          "never"
+        ],
+        "points": "40",
+        "tag": "emotional abuse"
+      },
+      {
+        "question": "Have you been using alcohol or drugs more frequently to cope with your feelings?",
+        "options": [
+          "yes",
+          "no"
+        ],
+        "points": "60",
+        "tag": "emotional abuse"
+      }
+
+    ]
+  }
