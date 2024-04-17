@@ -890,6 +890,18 @@ g-signin2{
   color: #000;
 }
 
+@media only screen and (max-width: 887px) {
+  .home_txt a{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 832px) {
+  .home_txt p{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .login-message {
     display: none;
@@ -899,6 +911,19 @@ g-signin2{
   }
   .home-section-middle {
     flex-basis: 90%;
+  }
+  .home_txt{
+    display: none;
+  }
+  .social-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .testimonial-container{
+    display: flex;
+    left: 0%;
   }
 }
 
