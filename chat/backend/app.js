@@ -1,10 +1,10 @@
 const questions = require('./data/Questions.json')
 
 replies = questions.data
-const io = require('socket.io')( 3000,{
+const io = require('socket.io')( 3001,{
     maxHttpBufferSize: 1e8,
     cors:{
-      origin: ["http://localhost:3000","http://localhost:3001","http://172.17.238.23:3000","http://172.17.238.23:3001"],
+      origin: ["http://localhost:3004","http://localhost:3001","http://172.17.238.23:3000","http://172.17.238.23:3001"],
       methods:['GET','POST']
     }
   })

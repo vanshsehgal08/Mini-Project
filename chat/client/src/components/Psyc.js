@@ -8,7 +8,7 @@ const Psyc = ({patientData}) => {
     const [text,setText] = useState("")
     const [textList,setTextList] = useState([{message:"Grettings! Dr.Psy here, How may I help you?" , userFlag:"user"}])
     useEffect(()=>{
-        const s = io("http://localhost:3006")
+        const s = io("http://localhost:3004")
         
         setSocket(s);
         return ()=>{
