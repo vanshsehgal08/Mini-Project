@@ -19,7 +19,7 @@ const ChatRoom = ({setPatientData}) => {
     const [temp,setTemp] = useState(false);
     const [temp2,setTemp2] = useState(false);
     useEffect(()=>{
-        const s = io("http://localhost:3006")
+        const s = io("http://localhost:3001")
         setSocket(s);
         return ()=>{
             s.disconnect()

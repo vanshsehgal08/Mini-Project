@@ -1,5 +1,5 @@
 import React from 'react'
-import hackBattleLogo from  '../resources/hackbattle.png'
+import user from  '../resources/user.png'
 
 const ChatMessage = ({message,userFlag}) => {
     const  photoURL  = ""
@@ -8,7 +8,7 @@ const ChatMessage = ({message,userFlag}) => {
   
     return (<>
       <div className={`message ${messageClass}`}>
-        <img src={photoURL || hackBattleLogo} />
+        <img src={photoURL || user} />
         <p>{text}</p>
       </div>
     </>)
