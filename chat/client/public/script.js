@@ -16,4 +16,3 @@ navIcon.addEventListener("click", () => {
     el.classList.toggle("show");
   });
 });
-
