@@ -779,3 +779,89 @@ footer {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .about-us {
+      width: 95%;
+  }
+  .nav-links-container {
+      display: block;
+  }
+  .nav-links-container .btn {
+      margin: 5px;
+      margin-left: auto;
+  }
+  .nav-icon {
+      display: block;
+  }
+  header.landing-page {
+      height: 50px;
+      /* background-color: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%); */
+  }
+  header.landing-page a:not(:first-child) {
+      display: none;
+  }
+  .show {
+      display: block !important;
+  }
+  header.landing-page.show {
+      height: 150px;
+  }
+  header.in-pages {
+      height: 50px;
+  }
+  header.in-pages.show {
+      height: 100vh;
+  }
+  header.in-pages .nav-links:not(:first-child) {
+      display: none;
+  }
+  header.in-pages.show a.nav-links {
+      display: block;
+      margin-left: auto;
+  }
+  header.in-pages .nav-icon {
+      right: 30px;
+  }
+
+  .testimonial-container {
+      transform: scale(0.6);
+      min-width: 200px;
+  }
+  .home-section-right,
+  .home-section-left {
+      display: none;
+  }
+  .home-section-middle {
+      flex-basis: 60%;
+  }
+
+  .home-btn1 a:hover {
+      color: white;
+  }
+}
+
+.chat-head {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.patient-data {
+  text-align: center;
+}
+
+.patient-data img {
+  width: 5rem;
+  margin-top: 2rem;
+}
+
+.patient-data button {
+  width: 14rem;
+  margin-bottom: 2rem;
+  font-weight: 1500;
+}
+
+.patient-data button a:hover {
+  color: #000;
+}
+
+
