@@ -6,7 +6,7 @@ const employeeLabel = document.querySelector(".employee-label");
 const signupForm = document.querySelector(".signup-form");
 const employeeCheckbox = document.querySelector(".signup-employee .checkbox-ball");
 
-const User = function (name, email, password, phone, height, weight, medicalHistory, medications, allergies) {
+const User = function (name, email, password, phone, height, weight, medicalHistory, medications, allergies, gender) {
   this.name = name;
   this.email = email;
   this.password = password;
@@ -16,7 +16,9 @@ const User = function (name, email, password, phone, height, weight, medicalHist
   this.medicalHistory = medicalHistory;
   this.medications = medications;
   this.allergies = allergies;
+  this.gender = gender; // Add gender parameter
 };
+
 
 genderInputs.forEach((input) =>
   input.addEventListener("change", () => {
@@ -41,6 +43,14 @@ signupForm.addEventListener("submit", (e) => {
   const medicalHistory = signupForm.querySelector(".medical-history").value;
   const medications = signupForm.querySelector(".medications").value;
   const allergies = signupForm.querySelector(".allergies").value;
+
+  const genderInputs = document.querySelectorAll('input[name="gender"]');
+  let selectedGender = '';
+  genderInputs.forEach((input) => {
+    if (input.checked) {
+      selectedGender = input.value;
+    }
+  });
 
   const elements = [
     signupForm.querySelector(".firstname"),
@@ -93,18 +103,19 @@ signupForm.addEventListener("submit", (e) => {
   if (errors.length) {
     alert(errors.join("\n"));
   } else {
-    saveAccount(firstName, lastName, email, password, phone, height, weight, medicalHistory, medications, allergies);
+    saveAccount(firstName, lastName, email, password, phone, height, weight, medicalHistory, medications, allergies, selectedGender);
     alert("Account created successfully!");
     window.location.href = '../Views/login.html';
   }
 });
 
 
-function saveAccount(firstName, lastName, email, password, phone, height, weight, medicalHistory, medications, allergies) {
+function saveAccount(firstName, lastName, email, password, phone, height, weight, medicalHistory, medications, allergies, gender) {
   let acc = JSON.parse(localStorage.getItem("account")) || [];
-  acc.push(new User(firstName + " " + lastName, email, password, phone, height, weight, medicalHistory, medications, allergies));
+  acc.push(new User(firstName + " " + lastName, email, password, phone, height, weight, medicalHistory, medications, allergies, gender)); // Include gender
   localStorage.setItem("account", JSON.stringify(acc));
 }
+
 
 function isAvailable(email) {
   const acc = JSON.parse(localStorage.getItem("account")) || [];

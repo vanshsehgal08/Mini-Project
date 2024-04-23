@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Find the user data that matches the logged-in user's email
         const userData = accountData.find(user => user.email === loggedInUserEmail);
         if (userData) {
+            const userImage = document.getElementById('userImage');
+            userImage.src = userData.gender === 'Male' ? '../assets/user.png' : '../assets/user2.png';
             // Update name, phone number, height, weight, medical history, medications, and allergies
             document.getElementById('userName').innerHTML = `<strong>Name:</strong> ${userData.name}`;
+            document.getElementById('userGender').innerHTML = `<strong>Gender:</strong> ${userData.gender}`;
             document.getElementById('userPhone').innerHTML = `<strong>Phone No:</strong> ${userData.phone}`;
             document.getElementById('userHeight').innerHTML = `<strong>Height:</strong> ${userData.height}cm`;
             document.getElementById('userWeight').innerHTML = `<strong>Weight:</strong> ${userData.weight}Kg`;
@@ -86,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         // Show a popup indicating successful deletion
                         alert('Your account has been successfully deleted.');
                         // Redirect the user to the home page or logout
-                        window.location.href = '../index.html'; // Change the URL if needed
+                        window.location.href = '../index.html'; 
                     } else {
                         alert('Incorrect password. Please try again.');
                     }
