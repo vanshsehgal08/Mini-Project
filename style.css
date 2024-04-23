@@ -716,6 +716,40 @@ main {
     /* overflow: auto; */
 }
 
+/* EDIT PROFILE FORM STYLING */
+.edit-profile-form {
+    margin-top: 20px;
+}
+
+.edit-profile-form div {
+    margin-bottom: 10px;
+}
+
+.edit-profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-profile-form input[type="text"] {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* RESPONSIVE STYLING */
+@media only screen and (max-width: 768px) {
+    .edit-profile-form input[type="text"] {
+        width: 50%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
 /* //////////////////////////////
 /////// FOOTER PAGE STYLING /////
 ///////////////////////////////// */
