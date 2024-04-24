@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URI = "http://localhost:3000"
+const URI = "http://localhost:3004"
 export async function addPost(data){
     try{
         console.log("data---")
